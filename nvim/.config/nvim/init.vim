@@ -1,5 +1,6 @@
 " enables syntax highlighting
 syntax on
+set noswapfile
 
 " Better colors
 set termguicolors
@@ -83,3 +84,4 @@ lua require('sesharim')
 
 set background=dark
 colorscheme solarized8 " tokyonight
+
