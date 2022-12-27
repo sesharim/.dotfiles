@@ -1,8 +1,16 @@
 require('gitsigns')
 require('lualine')
-require('lsp')
+-- require('lsp')
+require('lspconfig')
 require('telescope')
-require('treesitter')
-require('tokyonight')
+-- require('treesitter')
+local treesitter = require('nvim-treesitter.configs')
+
+treesitter.setup {
+    highlight = {
+        enable = true
+    }
+}
+-- require('tokyonight')
 require('nvim-tree')
 require('bufferline')

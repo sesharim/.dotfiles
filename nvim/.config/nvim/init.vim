@@ -50,18 +50,18 @@ set smartcase
 call plug#begin('~/.config/nvim/plugged')
 
 " General
-" Plug 'lifepillar/vim-solarized8'
+Plug 'lifepillar/vim-solarized8'
 Plug 'kyazdani42/nvim-web-devicons'                " Devicons
 Plug 'nvim-lualine/lualine.nvim'                   " Status line
 Plug 'akinsho/bufferline.nvim'                     " Buffers
 Plug 'machakann/vim-highlightedyank'               " Highlight yanked text
 Plug 'kyazdani42/nvim-tree.lua'                    " File explorer
-Plug 'folke/tokyonight.nvim'                       " Color scheme
+" Plug 'folke/tokyonight.nvim'                       " Color scheme
 
 " Lsp
 Plug 'neovim/nvim-lspconfig'     
 Plug 'jose-elias-alvarez/null-ls.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " And :TSInstall ruby/go/etc
 " Autocompletion
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -79,9 +79,13 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
+" Languages
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()
+
 lua require('sesharim')
 
 set background=dark
-colorscheme tokyonught " solarized8
+colorscheme solarized8
 
