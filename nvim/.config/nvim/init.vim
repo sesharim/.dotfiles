@@ -6,9 +6,11 @@ set noswapfile
 set termguicolors
 
 " number of spaces in a <Tab>
+filetype plugin indent on
 set tabstop=2
 set softtabstop=2
 set expandtab
+set shiftwidth=2
 
 " enable autoindents
 set smartindent
