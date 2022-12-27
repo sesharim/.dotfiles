@@ -1,8 +1,0 @@
-require('sesharim.gitsigns')
-require('sesharim.lualine')
-require('sesharim.lsp')
-require('sesharim.telescope')
-require('sesharim.treesitter')
-require('sesharim.tokyonight')
-require('sesharim.nvim-tree')
-require('sesharim.bufferline')
