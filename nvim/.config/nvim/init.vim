@@ -46,7 +46,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 
-lua require('sesharim')
+" name of namespace (folder) inside of /lua/ folder
+lua require('custom_settings')
 
 set background=dark
 colorscheme solarized8

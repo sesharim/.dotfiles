@@ -1,0 +1,8 @@
+require('custom_settings.gitsigns')
+require('custom_settings.lualine')
+require('custom_settings.lsp')
+require('custom_settings.telescope')
+require('custom_settings.treesitter')
+require('custom_settings.nvim-tree')
+require('custom_settings.bufferline')
+-- require('tokyonight')
