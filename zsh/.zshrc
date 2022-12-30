@@ -2,6 +2,9 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git fzf rails ruby) # $ZSH/plugins/
 source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
 alias gl='git log --all --decorate --oneline --graph'
 
 # Add RVM to PATH for scripting.
@@ -19,6 +22,7 @@ export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:/home/sesharim/Projects/flutter/bin"
 export PATH="$PATH":"$HOME/Projects/flutter/.pub-cache/bin"
+export PATH="/opt/homebrew/bin:$PATH"
 
 export PROJECT_ID="prj-casali-dev"
 export PG_HOST="10.7.48.28"
